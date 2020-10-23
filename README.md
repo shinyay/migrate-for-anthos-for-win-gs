@@ -125,6 +125,12 @@ Upload `m4a-install.json` which is key file for accessing Container Registry and
 $ migctl setup install --json-key=m4a-install.json
 ```
 
+#### Validate Meigrate for Anthos installation
+
+```
+$ migctl doctor
+```
+
 ## Installation
 
 ## Licence
