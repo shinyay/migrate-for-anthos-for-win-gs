@@ -14,6 +14,11 @@ Overview
 ## Requirement
 
 ## Usage
+### Prepare Cloud SDK
+#### Installation
+```
+$ brew cask install google-cloud-sdk
+```
 
 ## Installation
 
