@@ -76,6 +76,19 @@ gcloud iam service-accounts keys create m4a-ce-src.json \
   --project=(gcloud config get-value project)
 ```
 
+### Create GKE Cluster
+
+```
+$ gcloud container clusters create m4a-process \
+    --project (gcloud config get-value project) \
+    --zone=us-central1-f \
+    --enable-ip-alias \
+    --num-nodes=1 \
+    --machine-type=n1-standard-2 \
+    --cluster-version=1.16 \
+    --enable-stackdriver-kubernetes
+```
+
 ## Installation
 
 ## Licence
