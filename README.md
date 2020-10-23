@@ -157,7 +157,12 @@ $ $ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
 
 #### Create Migration
 ```
-$ migctl migration create ce-migration --source ce-source --vm-id aspnet-demo --intent Image --os-type=Windows
+$ migctl migration create ce-migration --source ce-source --vm-id <INSTANCE_NAME> --intent Image --os-type=Windows
+```
+
+#### Moniroe Migration
+```
+$ $ migctl migration status ce-migration
 ```
 
 ## Installation
