@@ -30,6 +30,22 @@ $ gcloud components update
 $ gcloud auth login
 ```
 
+### Enable required Services
+
+|Name|Title|
+|----|-----|
+|servicemanagement.googleapis.com|Service Management API|
+|servicecontrol.googleapis.com|Service Control API|
+|cloudresourcemanager.googleapis.com|Cloud Resource Manager API|
+|compute.googleapis.com|Compute Engine API|
+|container.googleapis.com|Kubernetes Engine API|
+|containerregistry.googleapis.com|Google Container Registry API|
+|cloudbuild.googleapis.com|Cloud Build API|
+
+```
+$ gcloud services enable servicemanagement.googleapis.com servicecontrol.googleapis.com cloudresourcemanager.googleapis.com compute.googleapis.com container.googleapis.com containerregistry.googleapis.com cloudbuild.googleapis.com
+```
+
 ## Installation
 
 ## Licence
