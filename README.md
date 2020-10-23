@@ -46,6 +46,12 @@ $ gcloud auth login
 $ gcloud services enable servicemanagement.googleapis.com servicecontrol.googleapis.com cloudresourcemanager.googleapis.com compute.googleapis.com container.googleapis.com containerregistry.googleapis.com cloudbuild.googleapis.com
 ```
 
+### Configure Service Account
+
+- To access **Container Registry** and **Cloud Storage**
+- To use **Compute Engine** as a migration source
+
+
 ## Installation
 
 ## Licence
