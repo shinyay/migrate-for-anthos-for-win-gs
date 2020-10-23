@@ -131,6 +131,10 @@ $ migctl setup install --json-key=m4a-install.json
 $ migctl doctor
 ```
 
+### Add Migration Source
+
+Upload `m4a-ce-src.json` which is key file for using Compute Engine
+
 ## Installation
 
 ## Licence
