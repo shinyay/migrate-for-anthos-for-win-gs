@@ -89,6 +89,18 @@ $ gcloud container clusters create m4a-process \
     --enable-stackdriver-kubernetes
 ```
 
+#### Create Windows Node Pool
+
+```
+$ gcloud container node-pools create m4a-node-pool \
+    --cluster=m4a-process \
+    --zone=us-central1-f \
+    --image-type=WINDOWS_SAC \
+    --num-nodes=1 \
+    --scopes "cloud-platform" \
+    --machine-type=n1-standard-2
+```
+
 ## Installation
 
 ## Licence
