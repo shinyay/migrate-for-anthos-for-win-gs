@@ -135,6 +135,10 @@ $ migctl doctor
 
 Upload `m4a-ce-src.json` which is key file for using Compute Engine
 
+```
+$ migctl source create ce ce-source --project $(gcloud config get-value project) --json-key=m4a-ce-src.json
+```
+
 ## Installation
 
 ## Licence
