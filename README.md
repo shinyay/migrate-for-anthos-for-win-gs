@@ -162,7 +162,7 @@ $ migctl migration create ce-migration --source ce-source --vm-id <INSTANCE_NAME
 
 #### Moniroe Migration
 ```
-$ $ migctl migration status ce-migration
+$ watch migctl migration status ce-migration
 ```
 
 ## Installation
