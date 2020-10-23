@@ -60,7 +60,20 @@ gcloud projects add-iam-policy-binding (gcloud config get-value project)  \
   --role=roles/storage.admin
 gcloud iam service-accounts keys create m4a-install.json \
   --iam-account=m4a-install@(gcloud config get-value project).iam.gserviceaccount.com \
-  --project=(gcloud config get-value project) 
+  --project=(gcloud config get-value project)
+```
+
+#### To use Compute Engine as a migration source
+
+```
+gcloud iam service-accounts create m4a-ce-src \
+  --project=(gcloud config get-value project)
+gcloud projects add-iam-policy-binding (gcloud config get-value project)  \
+  --member=serviceAccount:m4a-ce-src@(gcloud config get-value project).iam.gserviceaccount.com \
+  --role=roles/compute.viewer
+gcloud iam service-accounts keys create m4a-ce-src.json \
+  --iam-account=m4a-ce-src@(gcloud config get-value project).iam.gserviceaccount.com \
+  --project=(gcloud config get-value project)
 ```
 
 ## Installation
