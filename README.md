@@ -139,6 +139,14 @@ Upload `m4a-ce-src.json` which is key file for using Compute Engine
 $ migctl source create ce ce-source --project $(gcloud config get-value project) --json-key=m4a-ce-src.json
 ```
 
+#### Validate Migration Source
+
+```
+$ kubectl get SourceProvider
+$ migctl source list
+$ migctl source status ce-source
+```
+
 ## Installation
 
 ## Licence
