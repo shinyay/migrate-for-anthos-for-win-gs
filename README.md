@@ -109,6 +109,10 @@ $ gcloud container clusters get-credentials m4a-process \
     --project (gcloud config get-value project)
 ```
 
+### Install Migrate for Anthos
+
+Visit [GKE Menu](https://console.cloud.google.com/kubernetes/list?_ga=2.146152052.173896692.1603064141-983599867.1599137884)
+
 ## Installation
 
 ## Licence
