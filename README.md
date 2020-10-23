@@ -25,6 +25,11 @@ $ brew cask install google-cloud-sdk
 $ gcloud components update
 ```
 
+#### Authorization
+```
+$ gcloud auth login
+```
+
 ## Installation
 
 ## Licence
