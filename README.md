@@ -58,6 +58,9 @@ gcloud iam service-accounts create m4a-install --project=(gcloud config get-valu
 gcloud projects add-iam-policy-binding (gcloud config get-value project)  \
   --member=serviceAccount:m4a-install@(gcloud config get-value project).iam.gserviceaccount.com \
   --role=roles/storage.admin
+gcloud iam service-accounts keys create m4a-install.json \
+  --iam-account=m4a-install@(gcloud config get-value project).iam.gserviceaccount.com \
+  --project=(gcloud config get-value project) 
 ```
 
 ## Installation
