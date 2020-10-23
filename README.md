@@ -147,6 +147,14 @@ $ migctl source list
 $ migctl source status ce-source
 ```
 
+### Create Migration
+#### Stop Micgration Source Instance on Compute Engine
+```
+$ gcloud compute instances list
+
+$ $ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
+```
+
 ## Installation
 
 ## Licence
