@@ -155,6 +155,11 @@ $ gcloud compute instances list
 $ $ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
 ```
 
+#### Create Migration
+```
+$ migctl migration create ce-migration --source ce-source --vm-id aspnet-demo --intent Image --os-type=Windows
+```
+
 ## Installation
 
 ## Licence
