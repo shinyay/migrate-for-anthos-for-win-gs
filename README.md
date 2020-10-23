@@ -121,6 +121,10 @@ $ gcloud container clusters get-credentials m4a-process --zone us-central1-f --p
 
 Upload `m4a-install.json` which is key file for accessing Container Registry and Cloud Storage
 
+```
+$ migctl setup install --json-key=m4a-install.json
+```
+
 ## Installation
 
 ## Licence
