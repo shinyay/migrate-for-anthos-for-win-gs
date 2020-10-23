@@ -101,6 +101,14 @@ $ gcloud container node-pools create m4a-node-pool \
     --machine-type=n1-standard-2
 ```
 
+### Get Credential for GKE Cluster
+
+```
+$ gcloud container clusters get-credentials m4a-process \
+    --zone=us-central1-f \
+    --project (gcloud config get-value project)
+```
+
 ## Installation
 
 ## Licence
