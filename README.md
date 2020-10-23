@@ -116,8 +116,10 @@ Visit [GKE Menu](https://console.cloud.google.com/kubernetes/list?_ga=2.14615205
 Click **Connect** Button and use Cloud Shell
 
 ```
-$ gcloud container clusters get-credentials m4a-process --zone us-central1-f --project $((gcloud config get-value project))
+$ gcloud container clusters get-credentials m4a-process --zone us-central1-f --project $(gcloud config get-value project)
 ```
+
+Upload `m4a-install.json` which is key file for accessing Container Registry and Cloud Storage
 
 ## Installation
 
