@@ -113,6 +113,12 @@ $ gcloud container clusters get-credentials m4a-process \
 
 Visit [GKE Menu](https://console.cloud.google.com/kubernetes/list?_ga=2.146152052.173896692.1603064141-983599867.1599137884)
 
+Click **Connect** Button and use Cloud Shell
+
+```
+$ gcloud container clusters get-credentials m4a-process --zone us-central1-f --project $((gcloud config get-value project))
+```
+
 ## Installation
 
 ## Licence
