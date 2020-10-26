@@ -206,7 +206,7 @@ $ gcloud beta compute instances create win-builder-1 \
     --machine-type=n1-standard-4 \
     --subnet=default \
     --scopes=cloud-platform \
-    --image=windows-server-1909-dc-core-for-containers-v20200310 \
+    --image=windows-server-1909-dc-core-for-containers-v20201013 \
     --image-project=windows-cloud \
     --boot-disk-size=32GB \
     --boot-disk-type=pd-ssd
@@ -227,12 +227,13 @@ $ gcloud beta compute instances create win-builder-1 \
 
 #### Authenticate Google Container Registry
 ```
-> gclpud  auth login
+> gcloud auth login
 > gcloud auth configure-docker
 ```
 
 #### Build and Push Container Image
 ```
+> gsutil cp gs://<PATH>/artifacts.zip .
 > Expand-Archive .\artifacts.zip
 > docker build -t gcr.io/<PROJECT_ID>/<IMAGE_NAME>:<TAG> .\artifacts\
 > docker push
