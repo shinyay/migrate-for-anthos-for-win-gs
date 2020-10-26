@@ -199,6 +199,11 @@ $ gsutil cp gs://<PATH>/artifacts.zip /home/....
 ```
 
 #### Create Windows Server to Build Windows Container
+
+You must run docker build on a **Windows version** that is **the same as the version used by the target container**.
+
+- `--image=windows-server-1909-dc-core-for-containers-v20201013`
+
 ```
 $ gcloud beta compute instances create win-builder-1 \
     --project=$(gcloud config get-value project) \
