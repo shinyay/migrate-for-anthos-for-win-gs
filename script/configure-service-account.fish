@@ -42,6 +42,8 @@ function do_func
     gcloud iam service-accounts keys create m4a-ce-src.json \
       --iam-account=m4a-ce-src@(gcloud config get-value project).iam.gserviceaccount.com \
       --project=(gcloud config get-value project)
+    #### Displau service account list
+    gcloud iam service-accounts list
   end
 end
 
