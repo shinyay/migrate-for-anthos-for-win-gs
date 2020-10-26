@@ -217,20 +217,26 @@ $ gcloud beta compute instances create win-builder-1 \
 #### Enable Long Path on Windows Server
 
 ```
-powershell
+> powershell
 ```
 
 ```
-Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name LongPathsEnabled -Value 1 -Type DWord
-Restart-Computer
+> Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name LongPathsEnabled -Value 1 -Type DWord
+> Restart-Computer
 ```
 
 #### Authenticate Google Container Registry
 ```
-$ gclpud  auth login
-$ gcloud auth configure-docker
+> gclpud  auth login
+> gcloud auth configure-docker
 ```
 
+#### Build and Push Container Image
+```
+> Expand-Archive .\artifacts.zip
+> docker build -t gcr.io/<PROJECT_ID>/<IMAGE_NAME>:<TAG> .\artifacts\
+> docker push
+```
 
 ## Installation
 
