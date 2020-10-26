@@ -198,6 +198,21 @@ $ migctl migration get-artifacts ce-migration
 $ gsutil cp gs://<PATH>/artifacts.zip /home/....
 ```
 
+#### Create Windows Server to Build Windows Container
+```
+$ gcloud beta compute instances create win-builder-1 \
+    --project=$(gcloud config get-value project) \
+    --zone=us-central1-f \
+    --machine-type=n1-standard-4 \
+    --subnet=default \
+    --scopes=cloud-platform \
+    --image=windows-server-1909-dc-core-for-containers-v20200310 \
+    --image-project=windows-cloud \
+    --boot-disk-size=32GB \
+    --boot-disk-type=pd-ssd
+```
+
+
 ## Installation
 
 ## Licence
