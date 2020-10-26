@@ -98,6 +98,7 @@ $ gcloud container node-pools create m4a-node-pool \
     --image-type=WINDOWS_SAC \
     --num-nodes=1 \
     --scopes "cloud-platform" \
+    --no-enable-autoupgrade \
     --machine-type=n1-standard-2
 ```
 
