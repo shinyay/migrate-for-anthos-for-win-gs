@@ -219,6 +219,8 @@ $ gcloud beta compute instances create win-builder-1 \
 
 #### RDP Windows
 
+Set Login Password ant then Access to Windows Server
+
 #### Enable Long Path on Windows Server
 
 ```
