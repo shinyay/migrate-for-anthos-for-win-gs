@@ -166,6 +166,11 @@ $ migctl migration create ce-migration --source ce-source --vm-id <INSTANCE_NAME
 $ watch migctl migration status ce-migration -v
 ```
 
+### Monitor Migration
+```
+$ migctl migration list
+```
+
 ## Installation
 
 ## Licence
