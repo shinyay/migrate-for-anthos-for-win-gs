@@ -212,11 +212,21 @@ $ gcloud beta compute instances create win-builder-1 \
     --boot-disk-type=pd-ssd
 ```
 
+#### RDP Windows
+
 #### Enable Long Path on Windows Server
+
+```
+powershell
+```
+
 ```
 Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name LongPathsEnabled -Value 1 -Type DWord
 Restart-Computer
 ```
+
+
+
 
 ## Installation
 
