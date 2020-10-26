@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: windows-migration
+  labels:
+    app: windows-migration
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: windows-migration
+  template:
+    metadata:
+      labels:
+        app: windows-migration
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      containers:
+      - name: windows-migration-container
+        image: gcr.io/<PROJECT_ID>/windows-migration:v1.0
+        ports:
+        - containerPort: 80
