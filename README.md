@@ -152,7 +152,7 @@ $ migctl source status ce-source
 ```
 $ gcloud compute instances list
 
-$ $ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
+$ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
 ```
 
 #### Create Migration
