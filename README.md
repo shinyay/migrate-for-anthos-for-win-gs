@@ -191,7 +191,11 @@ $ migctl migration list
 ### Build Windows Container
 #### Download Migration Artifacts
 ```
-$ migctl migration status ce-migration
+$ migctl migration get-artifacts ce-migration
+```
+
+```
+$ gsutil cp gs://<PATH>/artifacts.zip /home/....
 ```
 
 ## Installation
