@@ -225,7 +225,11 @@ Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name L
 Restart-Computer
 ```
 
-
+#### Authenticate Google Container Registry
+```
+$ gclpud  auth login
+$ gcloud auth configure-docker
+```
 
 
 ## Installation
