@@ -166,9 +166,21 @@ $ migctl migration create ce-migration --source ce-source --vm-id <INSTANCE_NAME
 $ watch migctl migration status ce-migration -v
 ```
 
+### Customize Migration Plan
+#### Retrieve Migration Plan
+```
+$ migctl migration get ce-migration
+```
+
 ### Monitor Migration
 ```
 $ migctl migration list
+```
+
+### Build Windows Container
+#### Download Migration Artifacts
+```
+$ migctl migration status ce-migration
 ```
 
 ## Installation
