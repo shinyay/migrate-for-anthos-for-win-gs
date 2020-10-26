@@ -161,7 +161,7 @@ $ gcloud compute instances stop <INSTANCE_NAME> --zone=<ZONE>
 $ migctl migration create ce-migration --source ce-source --vm-id <INSTANCE_NAME> --intent Image --os-type=Windows
 ```
 
-#### Moniroe Migration
+#### Monitor Migration
 ```
 $ watch migctl migration status ce-migration -v
 ```
@@ -176,6 +176,11 @@ $ migctl migration get ce-migration
 #### Generate Artifacts
 ```
 $ migctl migration generate-artifacts ce-migration
+```
+
+#### Monitoring Progress
+```
+$ migctl migration status ce-migration -v 
 ```
 
 ### Monitor Migration
