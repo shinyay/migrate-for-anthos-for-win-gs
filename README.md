@@ -172,6 +172,12 @@ $ watch migctl migration status ce-migration -v
 $ migctl migration get ce-migration
 ```
 
+### Execute Migration
+#### Generate Artifacts
+```
+$ migctl migration generate-artifacts ce-migration
+```
+
 ### Monitor Migration
 ```
 $ migctl migration list
