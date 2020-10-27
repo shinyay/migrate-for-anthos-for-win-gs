@@ -246,6 +246,17 @@ Set Login Password ant then Access to Windows Server
 > docker push
 ```
 
+### Deploy Container on GKE
+
+- `deploy.yml`: Deploy container to GKE
+  - Configre registry at `deploy.yml`
+- `service.yml`: Create Load Balancer
+
+```
+$ kubectl apply -f deploy.yml
+$ kubectl apply -f service.yml
+```
+
 ## Installation
 
 ## Licence
