@@ -14,6 +14,20 @@ Migrate for Anthow for Windows Server
 ## Requirement
 
 ## Usage
+### Qualify Windows Workload
+- Login to Windows VM
+
+#### Retrieve Evaluation Tool
+```
+> mkdir m4a 
+> cd m4a
+> bitsadmin /TRANSFER collect-info https://storage.googleapis.com/anthos-migrate-release/v1.5.0/windows/amd64/collect_info.exe C:\Users\shinyay\m4a\collect_info.exe
+```
+
+<details><summary>download collect-info tool</summary><div>
+<img width="" alt="vscode" src="https://user-images.githubusercontent.com/3072734/97513662-351e4400-19d0-11eb-8552-14bdca83d19f.png">
+</div></details>
+
 ### Prepare Cloud SDK
 #### Installation
 ```
