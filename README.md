@@ -110,7 +110,7 @@ $ gcloud container clusters create m4a-process \
     --enable-ip-alias \
     --num-nodes=1 \
     --machine-type=n1-standard-2 \
-    --cluster-version=1.16 \
+    --cluster-version=1.16.15-gke.500 \
     --enable-stackdriver-kubernetes
 ```
 
