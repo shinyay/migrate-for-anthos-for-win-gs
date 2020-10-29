@@ -18,6 +18,8 @@ Migrate for Anthow for Windows Server
 - Login to Windows VM
 
 #### Retrieve Evaluation Tool
+- Use Administrator Command Prompt
+
 ```
 > mkdir m4a 
 > cd m4a
