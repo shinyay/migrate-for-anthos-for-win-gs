@@ -231,7 +231,7 @@ You must run docker build on a **Windows version** that is **the same as the ver
 
 ```
 $ gcloud beta compute instances create win-container-builder \
-    --project=$(gcloud config get-value project) \
+    --project=(gcloud config get-value project) \
     --zone=us-central1-f \
     --machine-type=n1-standard-4 \
     --subnet=default \
