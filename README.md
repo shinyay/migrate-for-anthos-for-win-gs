@@ -28,6 +28,15 @@ Migrate for Anthow for Windows Server
 <img width="" alt="vscode" src="https://user-images.githubusercontent.com/3072734/97513662-351e4400-19d0-11eb-8552-14bdca83d19f.png">
 </div></details>
 
+#### Run Collect-Info
+```
+> collect-info.exe
+```
+
+<details><summary>run collect-info tool</summary><div>
+<img width="" alt="vscode" src="https://user-images.githubusercontent.com/3072734/97513874-b07ff580-19d0-11eb-84da-e6281d16b03d.png">
+</div></details>
+
 ### Prepare Cloud SDK
 #### Installation
 ```
