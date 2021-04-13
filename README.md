@@ -1,4 +1,4 @@
-# Migrate for Anthos Getting Started
+# Migrate for Anthos Getting Started for Windows
 
 Migrate for Anthow for Windows Server
 
